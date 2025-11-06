@@ -22,4 +22,5 @@ I went with a dark background for the left section and a white background for th
 
 For inspiration, I looked at modern developer resumes and portfolios on sites like Dribbble and Canva. I took cues from minimalist layouts that use strong typography and clean contrasts.
 
-[Link to figma](https://www.figma.com/design/nDGpWG0uemaJTPau6UMebT/Untitled?node-id=0-1&t=ORK63P0uGPLoQ1CW-1)
+[Link to figma](https://www.figma.com/design/nDGpWG0uemaJTPau6UMebT/Untitled?node-id=0-1&t=ORK63P0uGPLoQ1CW-1)  
+[Link to hosted page](https://lluiscapotorres.github.io/Hypermedia_project_Part1/)
