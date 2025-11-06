@@ -1,0 +1,235 @@
+.html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+  font-family: 'Lora', serif; /* font principal i genèrica com fallback */
+}
+
+/*BLOC ESQUERRA*/
+.bloc-esquerra {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 30%;
+    height: 100vh;           /* ocupa tota la finestra */
+    padding: 20px;
+    box-sizing: border-box;
+    background-color: #1E1E1E;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*Línia dorada al final del bloc esquerre*/
+.bloc-esquerra::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 1.75%; /* just a la dreta */
+  width: 5px; /* gruix de la línia */
+  height: 100%; /* ocupa tota l’alçada del bloc */
+  background-color: #B27F00; /* color de la línia */
+}
+
+.bloc-esquerra p{
+    color: white;
+}
+
+.bloc-esquerra h1, h4 {
+    color: white;
+    margin: 0;          /* elimina tots els marges */
+    padding: 0;         /* opcional, per si hi ha padding per defecte */
+}
+
+
+.bloc-esquerra h2 {
+    color: #B27F00;
+    font-size: 1em; /* pots provar 0.9em o 0.8em segons t’agradi */
+}
+
+.bloc-esquerra #foto_lluis{
+    width: 200px;
+    height: 200px;
+}
+
+/* Achievements */
+.achievements {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  grid-template-rows: auto auto auto;
+  align-items: center;
+  text-align: left;
+  gap: 0 5px;
+  margin: 2px 0; /* menys espai vertical */
+  width: fit-content;
+}
+
+.achievements h2 {
+  grid-column: 1 / span 2;
+  grid-row: 1;
+  text-align: left;
+  margin: 15px 0 4px 0;
+}
+
+.achievements .img1,
+.achievements .img2 {
+  width: 32px;
+  height: 32px;
+  justify-self: center;
+  margin: 0;
+}
+
+.achievements .img1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+
+.achievements .text1 {
+  grid-column: 2;
+  grid-row: 2;
+}
+
+.achievements .img2 {
+  grid-column: 1;
+  grid-row: 3;
+}
+
+.achievements .text2 {
+  grid-column: 2;
+  grid-row: 3;
+}
+
+.achievements .text1,
+.achievements .text2 {
+  font-weight: bold;
+  margin: 0;
+  line-height: 1;
+  margin-left: 10px;
+}
+
+
+.contact {
+  display: grid;
+  grid-template-columns: auto 1fr; /* icona + text */
+  align-items: center;
+  text-align: left;
+  gap: 8px 12px;
+  margin: 20px 0;
+  width: 100%;          /* ocupa tota l'amplada del contenidor pare */
+  justify-content: start; /* assegura que tot el contingut estigui a l'esquerra */
+  justify-items: start;   /* alinea cada element a l'esquerra */
+}
+
+/* Títol */
+.contact h2 {
+  grid-column: 1 / span 2;
+  text-align: left;
+  margin: 0 0 8px 0;
+}
+
+/* Contingut */
+.contact-text {
+  display: contents; /* perquè segueixi la graella del pare */
+}
+
+/* Icones */
+.contact-text img {
+  width: 22px;
+  height: 22px;
+  justify-self: start; /* enganxa la icona a l'esquerra */
+}
+
+/* Texts */
+.contact-text p {
+  margin: 0;
+  font-size: 0.95em;
+  text-align: left;
+}
+
+/*BLOC DRETA ------------------------------------------------------------------------------------------------*/
+/* BLOC DRETA */
+.bloc-dreta {
+  display: grid;
+  grid-template-columns: 31% 31% 28%; 
+  gap: 10px;
+  width: 100%;
+  align-items: start;
+}
+
+.bloc-dreta h2, .anys {
+  color: #B27F00;
+}
+
+.bloc-dreta h2{
+  margin-bottom: 2.5%;
+}
+
+.educacio, .habilitats {
+  margin-top: 10%;
+}
+
+/* EDUCACIÓ */
+.educacio {
+  grid-column: 2;
+  text-align: left;
+}
+
+.educacio h2 {
+  margin-top: 0;
+}
+
+.entrada {
+  display: grid;
+  grid-template-columns: 105px 1fr;
+  gap: 6px 10px;
+  margin-bottom: 18px;
+}
+
+.entrada .anys {
+  font-weight: bold;
+  text-align: left;
+}
+
+.entrada .titol {
+  font-weight: bold;
+}
+
+/* HABILITATS (Conté Work Experience + Skills) */
+.habilitats {
+  grid-column: 3;
+  text-align: left;
+}
+
+/* WORK EXPERIENCE */
+.laboralExperience {
+  margin-bottom: 40px; /* 👈 Espai clar abans de les Skills */
+}
+
+.laboralExperience h2 {
+  margin-top: 0;
+}
+
+/* SKILLS BLOCK */
+
+.skills-block h3 {
+  margin-bottom: 4px;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 2px;
+  color: black;
+}
+
+.skill {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skill .nivell {
+  font-size: 1.75em;
+  letter-spacing: 1.5px;
+  color: #B27F00;
+}
